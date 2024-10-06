@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: scroll;
+}
+.navbar-section{
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 50px;
+}
+.navbar{
+    border-right: 1px solid #222;
+}
+.navbar a{
+    padding: 4px 25px;
+    cursor: default; /* Sets cursor to the default arrow */
+}
+.navbar-name{
+    border-right: 1px solid #222;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.navbar-name a{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    padding: 6px 15px;
+    transition: color 0.15s;
+}
+.navbar-name:hover{
+    background-color: #fff;
+}
+.navbar-name:hover a{
+    color: rgb(27, 27, 78);
+}
+.uni-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding-bottom: 20px;
+}
+.logo{
+    margin-left: 18px;
+}
+.uni-section{
+    margin-right: 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.uni-departments{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.uni-section a{
+    text-decoration: none;
+    color: rgb(0, 122, 204);
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.uni-schools{
+    margin-right: 8px;
+    transition: text-decoration 0.15s;
+}
+.uni-schools:hover a{
+    text-decoration: underline;
+}
+.uni-MyEd{
+    transition: text-decoration 0.15s;
+}
+.uni-MyEd:hover a{
+    text-decoration: underline;
+}
+.search-bar{
+    height: 36px;
+    width: 370px;
+    padding-left: 8px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: gray;
+    background-color: #e1e1e1;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.search-icon{
+    height: 38px;
+    width: 42px;
+    background-color: rgb(27, 27, 78);
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.search-icon:hover{
+    background-color: #ffffff;
+    color:  rgb(27, 27, 78);
+}
+.bx-search{
+    font-size: 14px;
+}
+.container{
+    background-color: #F5F5F5;
+    margin-top: -10px;
+}
+.uni-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+}
+.study-info{
+    width: 400px;
+    background-color: rgb(27, 27, 78);
+    margin-top: -7px;
+    padding-top: 30px;
+    padding-left: 12px;
+}
+.info-title{
+    cursor: pointer;
+}
+.info-title a{
+    color: rgb(80, 194, 231);
+    font-size: 22px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    pointer-events: none;
+    transition: text-decoration 0.15s;
+}
+.info-title:hover a{
+    text-decoration: underline;
+}
+.study-info p{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.uni-category, .degree-search{
+    margin-top: 30px;
+}
+.degree-search{
+    display: flex;
+    flex-direction: column;
+}
+.degree-search p{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+.info-searchbar{
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.undergraduate-degree, .postgraduate-degree{
+    background-color: rgb(27, 27, 78);
+}
+.undergraduate-degree{
+    margin-bottom: 18px;
+}
+.degree-searchbar{
+   height: 36px;
+   width: 348px;
+   padding-left: 10px;
+   font-size: 16px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: gray;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+   background-color: #e1e1e1;
+}
+.degree-searchbar::placeholder{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.degree-search-icon{
+    height: 38px;
+    width: 42px;
+    background-color: #fff;
+    color: rgb(27, 27, 78);
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-left: -5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.degree-search-icon:hover{
+    background-color: #e1e1e1;
+}
+.degree-search-icon .bx-search{
+    font-size: 14px;
+}
+.browse-area{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+.browse-subject a{
+    text-decoration: none;
+    padding-right: 10px;
+    color: rgb(80, 194, 231);
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.browse-subject:hover a{
+    text-decoration: underline;
+}
+.browse-alphabetically a{
+    text-decoration: none;
+    color: rgb(80, 194, 231);
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.browse-alphabetically:hover a{
+    text-decoration: underline;
+}
+.search-type{
+    padding-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.search-type label{
+    padding-right: 18px;
+    cursor: pointer;
+}
+.edinburgh-impact{
+    background-color: #333333;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 8px;
+}
+.impact-title{
+    color: #fff;
+    font-size: 35px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 18px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.impacts-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.impacts-info-title{
+    cursor: pointer;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.impacts-info-details, .impacts-info-title, .impacts-info-links{
+    width: 250px;
+}
+.impacts-culture-title, .impacts-culture-info{
+    width: 392px;
+}
+.impacts-info-title a, .impacts-culture-title a, .impacts-info-details a, .impacts-info-links a{
+    color: rgb(72, 179, 214);
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-decoration 0.15s;
+}
+.impacts-info-title:hover a, .impacts-culture-title:hover a, .impacts-info-details:hover a, .impacts-info-links:hover a{
+    text-decoration: underline;
+}
+.impacts-info-details p{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.more-info, .more-info p{
+    margin-top: 10px;
+}
+.more-info p{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-bottom: 20px;
+}
+.impacts-info-title, .impacts-culture-title{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.impacts-culture-title{
+    width: 300px;
+}
+.impacts-culture-info p{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.impacts-info-links{
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.essential-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.button-body{
+    background-color: #fff;
+    width: 402px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-layout{
+    color: #fff;
+    background-color: rgb(27, 27, 78);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    width: 370px;
+    height: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.button-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button-name i{
+    font-size: 22px;
+}
+.button-name p{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-left: 5px;
+    transition: text-decoration 0.15s;
+}
+.button-name:hover p{
+    text-decoration: underline;
+}
+.button-layout:hover{
+    background-color: rgb(1, 1, 22);
+}
+.edinburgh-society{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.empty{
+    background-color: rgb(27, 27, 78);
+    color: rgb(27, 27, 78);
+    font-size: 2px;
+    height: 7px;
+ }
+.society-container{
+    width: 410px;
+    background-color: #fff;
+}
+.society-title{
+    padding-top: 10px;
+    padding-left: 15px;
+    color: rgb(27, 27, 78);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.society-title a{
+    color: rgb(27, 27, 78);
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.society-title:hover a{
+    text-decoration: underline;
+}
+.society-description{
+    color: rgb(27, 27, 78);
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    width: 380px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.society-links{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(0, 122, 204);
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+    margin-bottom: 10px;
+}
+.links:hover a{
+    color: rgb(27, 27, 78);
+    text-decoration: underline;
+}
+.quality-assurance{
+    margin-left: 21px;
+    margin-right: 21px;
+    background-color: #fff;
+    color: rgb(27, 27, 78);
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.publish{
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8C8C8C;
+    margin-left: 21px;
+    margin-bottom: 35px;
+}
+.uni-name{
+    background-color: rgb(66, 63, 63);
+}
+.uni-name p{
+    margin-left: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8C8C8C;
+}
+.institution-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+}
+.institution-affilliations{
+    padding-top: 15px;
+    padding-left: 21px;
+}
+.partnership{
+    padding-top: 15px;
+    padding-right: 21px;
+}
+.affilliation-links a{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.affilliation-links:hover a{
+    text-decoration: underline;
+    color: #fff;
+}
+.university-registration{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    background-color: rgb(50, 50, 50);
+}
+.university-details{
+    width: 850px;
+    font-size: 14.5px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: gray;
+}
+.MyEd-login-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(27, 27, 78);
+    height: 25px;
+    padding-left: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.MyEd-login-button:hover{
+    background-color: rgb(2, 2, 12);
+}
+.MyEd-login-button p{
+    transition: text-decoration 0.15s;
+}
+.MyEd-login-button:hover p{
+    text-decoration: underline;
+}
+.login-name{
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+}
+.login-icon i{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    color: #fff;
+}
+.edinburgh-copyright{
+    color: gray;
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 21px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+}
+.cookies-section{
+    background-color: rgb(66, 63, 63);
+    margin-top: 12px;
+    padding: 8px 8px;
+    position: fixed;
+    bottom: 0;
+}
+.cookies-settings{
+    background-color: rgb(66, 63, 63);
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.cookies-settings:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+.CMS-login{
+    display: flex;
+    align-items: center;
+    margin-left: 1260px;
+    margin-top: -50px;
+}
+.CMS-login p{
+    font-size: 11px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: gray;
+}
+.CMS-login .bx-chevron-right{
+    font-size: 22px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
