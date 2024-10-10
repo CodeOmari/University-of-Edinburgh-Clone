@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: scroll;
+}
+.navbar-section{
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 50px;
+}
+.navbar{
+    border-right: 1px solid #222;
+}
+.navbar a{
+    padding: 4px 25px;
+    cursor: default; /* Sets cursor to the default arrow */
+}
+.navbar-name{
+    border-right: 1px solid #222;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.navbar-name a{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    padding: 6px 15px;
+    transition: color 0.15s;
+}
+.navbar-name:hover{
+    background-color: #fff;
+}
+.navbar-name:hover a{
+    color: #004F71;
+}
+.uni-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+.logo{
+    margin-left: 18px;
+}
+.uni-section{
+    margin-right: 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.uni-departments{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.uni-section a{
+    text-decoration: none;
+    color: rgb(0, 122, 204);
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.uni-schools{
+    margin-right: 8px;
+    transition: text-decoration 0.15s;
+}
+.uni-schools:hover a{
+    text-decoration: underline;
+}
+.uni-MyEd{
+    transition: text-decoration 0.15s;
+}
+.uni-MyEd:hover a{
+    text-decoration: underline;
+}
+.search-bar{
+    height: 36px;
+    width: 370px;
+    padding-left: 8px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: gray;
+    background-color: #e1e1e1;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.search-icon{
+    height: 38px;
+    width: 42px;
+    background-color: #004F71;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #004F71;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-left: -5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.search-icon:hover{
+    background-color: #ffffff;
+    color: #004F71;
+}
+.bx-search{
+    font-size: 14px;
+}
+.news-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.section-heading{
+    background-color: #004F71;
+    margin-top: -5px;
+    height: 105.59px;
+    display: flex;
+    align-items: center;
+}
+.news-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Crimson TexT", serif;
+    padding-left: 25px;
+    transition: text-decoration 0.15s;
+}
+.news-link:hover a{
+    text-decoration: underline;
+}
+.container{
+    background-color: #F5F5F5;
+    margin-top: -1px;
+}
+.more-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.home-study{
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #E4E4E4;
+    margin-right: 10px;
+}
+.home-link a{
+    padding-left: 10px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: rgb(109, 107, 107);
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.home-link:hover a{
+    text-decoration: underline;
+}
+.greater-than{
+    color: rgb(109, 107, 107);
+    font-size: 12px;
+    padding-right: 5px;
+}
+.visit-title p{
+    color: #333333;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 37px;
+    background-color: #004F71;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact-us:hover{
+    text-decoration: underline;
+    background-color: #01293a;
+}
+.news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4px;
+}
+.news-button-title{
+    background-color: #004F71;
+    width: 240px;
+    border-width: 1px;
+    border-style: solid;
+    border: none;
+}
+.news-button-title a{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 18px 6px;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+.news-button-title:hover a{
+    text-decoration: underline;
+    background-color: #01293a;
+}
+.news-button{
+    background-color: #fff;
+    width: 240px;
+    border-width: 1px;
+    border-style: solid;
+    border: none;
+}
+.news-button a{
+    color: #222;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 14px 6px;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+.news-button:hover a{
+    background-color: #F5F5F5;
+    color: black;
+    text-decoration: underline;
+}
+.edinburgh-news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.edinburgh-news-title{
+    background-color: #004F71;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.edinburgh-news-title a{
+    color: lightblue;
+    cursor: default;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.edinburgh-news-title:hover a{
+    text-decoration: underline;
+}
+.edinburgh-links{
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    padding-right: 15px;
+}
+.link{
+    padding-bottom: 5px;
+}
+.link a{
+    text-decoration: none;
+    color: #346DBF;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+    cursor: default;
+}
+.link:hover a{
+    text-decoration: underline;
+    color: #083574;
+}
+.edinburgh-impact{
+    background-color: #004F71;
+    margin-top: 15px;
+    padding-left: 18px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+.impact-title{
+    padding-bottom: 10px;
+}
+.impact-title a{
+    text-decoration: none;
+    color: lightblue;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.impact-title:hover a{
+    text-decoration: underline;
+}
+.impact-info p{
+    color: #fff;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.video-news-info{
+    background-color: #fff;
+    padding-left: 18px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+}
+.news-info p{
+    color: #333333;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.staff-info p{
+    color: #333333;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    margin-top: -5px;
+}
+.empty{
+    background-color: #004F71;
+    color: #004F71;
+    font-size: 8px;
+    margin-top: 20px;
+}
+.archive-container{
+    background-color: #fff;
+    padding-left: 18px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+.archive-title{
+    padding-bottom: 12px;
+}
+.archive-title a{
+    color: #346DBF;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    transition: text-decoration 0.15s;
+}
+.archive-title:hover a {
+    text-decoration: underline;
+    color: #083574;
+}
+.archive-info p{
+    font-family: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #333333;
+}
+.free{
+    background-color: #004F71;
+    color: #004F71;
+    font-size: 8px
+}
+.line{
+    background-color: #007288;
+    color: #007288;
+    font-size: 5px;
+}
+.events-container{
+    display: flex;
+    flex-direction: row;
+}
+.calendar-container{
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 503px;
+    padding-top: 18px;
+    background-color: #fff;
+}
+.container-title{
+    padding-bottom: 10px;
+}
+.container-title a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #346DBF;
+    transition: text-decoration 0.15s;
+}
+.container-title:hover a{
+    text-decoration: underline;
+    color: #083574;
+}
+.events-container{
+    padding-top: 7px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.events-container:hover{
+    background-color: #F5F5F5;
+}
+.event-info{
+    padding-left: 12px;
+}
+.event-details{
+    padding-bottom: 10px;
+}
+.event-details a{
+    text-decoration: none;
+    color: #007288;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.event-details:hover a{
+    text-decoration: underline;
+}
+.event-time p{
+    color: #333333;
+    font-size: 15px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.search-button{
+    width: 503px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border: none;
+    border-radius: 3px;
+    padding-bottom: 10px;
+    color: #fff;
+    padding-top: 10px;
+    background-color: #004F71;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: background-color 0.15s;
+}
+.search-button:hover{
+    background-color: #0c2446;
+}
+.search-button a{
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+}
+.search-button:hover a{
+    text-decoration: underline;
+}
+.publish{
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8C8C8C;
+    margin-top: 35px;
+    margin-left: 21px;
+    margin-bottom: 35px;
+}
+.uni-name{
+    background-color: rgb(66, 63, 63);
+}
+.uni-name p{
+    margin-left: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #8C8C8C;
+}
+.institution-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+}
+.institution-affilliations{
+    padding-top: 15px;
+    padding-left: 21px;
+}
+.partnership{
+    padding-top: 15px;
+    padding-right: 21px;
+}
+.affilliation-links a{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    transition: text-decoration 0.15s;
+}
+.affilliation-links:hover a{
+    text-decoration: underline;
+    color: #fff;
+}
+.university-registration{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    background-color: rgb(50, 50, 50);
+}
+.university-details{
+    width: 850px;
+    font-size: 14.5px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: gray;
+}
+.MyEd-login-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    background-color: #004F71;
+    height: 25px;
+    padding-left: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.MyEd-login-button:hover{
+    background-color: #01293a;
+}
+.MyEd-login-button p{
+    transition: text-decoration 0.15s;
+}
+.MyEd-login-button:hover p{
+    text-decoration: underline;
+}
+.login-name{
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+}
+.login-icon i{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    color: #fff;
+}
+.edinburgh-copyright{
+    color: gray;
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding-left: 21px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+}
+.cookies-section{
+    background-color: rgb(66, 63, 63);
+    margin-top: 12px;
+    padding: 8px 8px;
+    position: fixed;
+    bottom: 0;
+}
+.cookies-settings{
+    background-color: rgb(66, 63, 63);
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.cookies-settings:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+.CMS-login{
+    display: flex;
+    align-items: center;
+    margin-left: 1260px;
+    margin-top: -50px;
+}
+.CMS-login p{
+    font-size: 11px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: gray;
+}
+.CMS-login .bx-chevron-right{
+    font-size: 22px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
